@@ -36,6 +36,9 @@ display: flex;
 gap: 1rem;
 
 /* CSS */
+// span{
+//   display: none;
+// }
 .learn-btn{
   appearance: none;
   display: flex;
@@ -67,14 +70,13 @@ gap: 1rem;
   vertical-align: baseline;
   white-space: nowrap;
 }
-
 .learn-btn:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
   background-color: $secondary-color;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
-  height: 100%;
+    height: 100%;
   opacity: 1;
   border-radius: 1.3rem;
   left: 0;
@@ -89,6 +91,8 @@ gap: 1rem;
 .learn-btn:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+  // border-radius: 0% 55% 60% 0% / 10% 37% 39% 10% ;
 }
 
 .learn-btn:after {
