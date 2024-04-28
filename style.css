@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.majorbtn {
+  padding: 0.6rem 1rem;
+  border-radius: 1.3rem;
+  border: none;
+  cursor: pointer;
+  background-color: #00323f;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 360px) {
+  .majorbtn {
+    padding: 0.5rem 1rem;
+    border-radius: 1.3rem;
+    border: none;
+    cursor: pointer;
+    background-color: #00323f;
+    color: white;
+    font-size: 1rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.pagelinksSmallScreen {
+  background-color: aqua;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media (max-width: 360px) {
+  .general-links {
+    position: fixed;
+    width: 100%;
+    transition: all 2s ease;
+  }
+  .general-links .pagelinksSmallScreen {
+    background-color: #e3fbfa;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 1px solid black;
+  }
+  .general-links .pagelinksSmallScreen a {
+    color: black;
+  }
+  .general-linksActive {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    transition: all 2s ease;
+  }
+  .general-linksActive .pagelinksSmallScreen {
+    background-color: #e3fbfa;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 1px solid black;
+  }
+  .general-linksActive .pagelinksSmallScreen a {
+    color: black;
+  }
+}
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: black;
+}
+header .logo img {
+  width: 100px;
+}
+header .page-link:hover {
+  border-bottom: 1px solid black;
+}
+header .pagelinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header .btn {
+  display: none;
+}
+header .login {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 360px) {
+  header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    color: black;
+  }
+  header .logo img {
+    width: 95px;
+  }
+  header .login {
+    padding: 0.35rem 1rem;
+  }
+  header .menuBtn {
+    padding: 0.5rem 1rem;
+  }
+  header .page-link:hover {
+    border-bottom: 1px solid black;
+  }
+  header .pagelinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  header .pagelinks {
+    display: none;
+  }
+  header .btn {
+    display: block;
+  }
+  header .login {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+.hero-section {
+  height: 100vh;
+  position: relative;
+  margin-top: 2rem;
+}
+.hero-section .summery-part {
+  width: 90%;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  background-color: #e7ff79;
+  border-radius: 1rem;
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+  justify-content: center;
+}
+.hero-section .summery-part .left-side {
+  padding-right: 4rem;
+}
+.hero-section .summery-part .left-side h2 {
+  font-size: 3.5rem;
+  color: #00323f;
+}
+.hero-section .summery-part .left-side p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.hero-section .summery-part .left-side .supports {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.hero-section .summery-part .left-side .btns {
+  display: flex;
+  gap: 1rem;
+  /* CSS */
+}
+.hero-section .summery-part .left-side .btns .learn-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #00323f;
+  border: 1px solid #00323f;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 0.6rem 1rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: capitalize;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.hero-section .summery-part .left-side .btns .learn-btn:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #e7ff79;
+  -webkit-clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+          clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  opacity: 1;
+  border-radius: 1.3rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+.hero-section .summery-part .left-side .btns .learn-btn:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  -webkit-clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+          clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+.hero-section .summery-part .left-side .btns .learn-btn:after {
+  background-color: #FFFFFF;
+}
+.hero-section .summery-part .left-side .btns .learn-btn span {
+  z-index: 1;
+  position: relative;
+}
+.hero-section .summery-part .right-side img {
+  border-radius: 0.5rem;
+}
+.hero-section .graph-card {
+  position: absolute;
+}
+.hero-section .graph-card-1 {
+  bottom: 15%;
+  left: 47%;
+}
+.hero-section .graph-card-2 {
+  bottom: 70%;
+  left: 85%;
+}
+.hero-section .colordiv {
+  width: 100%;
+  height: 45vh;
+  position: absolute;
+  bottom: -14%;
+  z-index: -1;
+  background: linear-gradient(#73e9e5, white);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,95 @@
+//general setting for the website
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $default-font;
+} 
+body{
+  position: relative;
+}
+
+//general setting for all the buttons and some few links
+.majorbtn{
+padding: 0.6rem 1rem;
+border-radius: 1.3rem;
+border: none;
+cursor: pointer;
+background-color: $primary-color;
+color: white;
+font-size: 1rem;
+} 
+//media query for the buttons
+@media(max-width:360px){
+    .majorbtn{
+        padding: 0.5rem 1rem;
+        border-radius: 1.3rem;
+        border: none;
+        cursor: pointer;
+        background-color: $primary-color;
+        color: white;
+        font-size: 1rem;
+        }  
+}
+a{
+    text-decoration: none;
+}
+//form for the small screen that pops up after the menu button has been clicked
+.pagelinksSmallScreen{
+  background-color: aqua;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+@media(max-width:360px){
+.general-links{
+  position: fixed;
+  // top: -100%;
+  width: 100%;
+  transition: all 2s ease;
+  .pagelinksSmallScreen{
+    background-color: #e3fbfa;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+ a{
+  color: black;
+}
+ border-bottom: 1px solid black;
+  } 
+}
+.general-linksActive{
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  transition: all 2s ease;
+  .pagelinksSmallScreen{
+    background-color: #e3fbfa;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+ a{
+  color: black;
+}
+ border-bottom: 1px solid black;
+  } 
+}
+//   .pagelinksSmallScreenActive{
+//     background-color: #e3fbfa;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+//     padding: 1rem;
+//        transition: all 2s ease;
+//   position: fixed;
+// a{
+//   color: black;
+// }
+//   width:100%;
+// border-bottom: 1px solid black;
+//   } 
+}

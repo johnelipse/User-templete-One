@@ -1,0 +1,70 @@
+//header of the website 
+header{
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+a{
+    color: black;
+}
+.logo{
+img{
+    width: 100px;
+ }
+}
+.page-link:hover{
+border-bottom: 1px solid black;
+}
+.pagelinks{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.btn{
+    display: none;
+}
+.login{
+display: flex;
+gap: 0.5rem;
+}
+}
+@media(max-width:360px){
+    header{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            color: black;
+        }
+        .logo{
+        img{
+            width: 95px;
+         }
+        }
+        .login{
+            padding: 0.35rem 1rem;     
+        }
+        .menuBtn{
+            padding: 0.5rem 1rem;     
+        }
+        .page-link:hover{
+        border-bottom: 1px solid black;
+        }
+        .pagelinks{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+.pagelinks{
+    display: none;
+}
+        .btn{
+            display: block;
+        }
+        .login{
+        display: flex;
+        gap: 0.5rem;
+        }
+        }
+}
