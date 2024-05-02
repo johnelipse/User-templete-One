@@ -36,3 +36,9 @@ const generalLinks=document.querySelector(".general-links")
 menuBtn.addEventListener("click",function(){
     generalLinks.classList.toggle("general-linksActive")
 })
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+.collaborates{
+    margin-top: 5rem;
+padding: 2rem;
+h2{
+    font-size: 1rem;
+    font-weight: 250;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.companies{
+display: flex;
+gap: 2rem;
+flex-wrap: wrap;
+// width: 90%;
+justify-content: center;
+img{
+    width: 8rem;
+}
+}
+}
+@media(max-width:360px){
+    .collaborates{
+        margin-top: 35rem;
+    padding: 2rem;
+    h2{
+        font-size: 1rem;
+        font-weight: 250;
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .companies{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    // width: 90%;
+    justify-content: center;
+    img{
+        width: 8rem;
+    }
+    }
+    }    
+}
