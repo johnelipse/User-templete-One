@@ -1,0 +1,113 @@
+.payements-section{
+margin-top: 3rem;
+align-items: center;
+padding: 3rem;
+gap: 13rem;
+display: flex;
+.detailed{
+.top-div{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+margin-bottom: 2rem;
+p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+    h3{
+        font-size: 2rem;
+        color: $primary-color;
+    }
+}
+.bottom{
+    h3{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: $primary-color;
+        font-weight: 500;
+    } 
+h4{
+    color: $primary-color;
+    font-weight: 500;
+}
+p{
+    font-weight: 200;
+}   
+}
+}
+.phone-image{
+position: relative;
+z-index: -1;
+.dashboard-05{
+position: absolute;
+left: -30%;
+bottom: 6%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dashboard-20{
+    position: absolute;
+    right: -55%;
+    bottom: 78%;
+}
+}
+}
+@media(max-width:360px){
+    .payements-section{
+        margin-top: 1rem;
+        align-items: center;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 2rem;
+        display: flex;
+        .detailed{
+        .top-div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        p{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+            h3{
+                font-size: 2rem;
+                color: $primary-color;
+            }
+        }
+        .bottom{
+            h3{
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+                color: $primary-color;
+                font-weight: 500;
+            } 
+        h4{
+            color: $primary-color;
+            font-weight: 500;
+        }
+        p{
+            font-weight: 200;
+        }   
+        }
+        }
+        .phone-image{
+        position: relative;
+        z-index: -1;
+        .dashboard-05{
+            display: none;
+        position: absolute;
+        left: -30%;
+        bottom: 6%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .dashboard-20{
+            display: none;
+            position: absolute;
+            right: -55%;
+            bottom: 78%;
+        }
+        }
+        }
+}

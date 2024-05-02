@@ -149,7 +149,6 @@ header .login {
   height: 100vh;
   position: relative;
   margin-top: 2rem;
-  z-index: -1;
 }
 .hero-section .summery-part {
   width: 90%;
@@ -668,5 +667,111 @@ header .login {
   }
   .powerfull-features .contact-cards .contact-card-2 .marq {
     display: none;
+  }
+}
+.payements-section {
+  margin-top: 3rem;
+  align-items: center;
+  padding: 3rem;
+  gap: 13rem;
+  display: flex;
+}
+.payements-section .detailed .top-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.payements-section .detailed .top-div p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.payements-section .detailed .top-div h3 {
+  font-size: 2rem;
+  color: #00323f;
+}
+.payements-section .detailed .bottom h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #00323f;
+  font-weight: 500;
+}
+.payements-section .detailed .bottom h4 {
+  color: #00323f;
+  font-weight: 500;
+}
+.payements-section .detailed .bottom p {
+  font-weight: 200;
+}
+.payements-section .phone-image {
+  position: relative;
+  z-index: -1;
+}
+.payements-section .phone-image .dashboard-05 {
+  position: absolute;
+  left: -30%;
+  bottom: 6%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.payements-section .phone-image .dashboard-20 {
+  position: absolute;
+  right: -55%;
+  bottom: 78%;
+}
+
+@media (max-width: 360px) {
+  .payements-section {
+    margin-top: 1rem;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    display: flex;
+  }
+  .payements-section .detailed .top-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .payements-section .detailed .top-div p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .payements-section .detailed .top-div h3 {
+    font-size: 2rem;
+    color: #00323f;
+  }
+  .payements-section .detailed .bottom h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #00323f;
+    font-weight: 500;
+  }
+  .payements-section .detailed .bottom h4 {
+    color: #00323f;
+    font-weight: 500;
+  }
+  .payements-section .detailed .bottom p {
+    font-weight: 200;
+  }
+  .payements-section .phone-image {
+    position: relative;
+    z-index: -1;
+  }
+  .payements-section .phone-image .dashboard-05 {
+    display: none;
+    position: absolute;
+    left: -30%;
+    bottom: 6%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .payements-section .phone-image .dashboard-20 {
+    display: none;
+    position: absolute;
+    right: -55%;
+    bottom: 78%;
   }
 }/*# sourceMappingURL=style.css.map */
