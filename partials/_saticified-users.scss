@@ -35,11 +35,11 @@ img{
 }
 .colordiv{
     width: 100%;
-    height: 45vh;
+    height: 65vh;
     position: absolute;
-    bottom: -11%;
+    bottom: -15%;
     z-index: -1;
-    background: linear-gradient(#73e9e5,white);
+    background: linear-gradient(to bottom, #b1e8e6, white);
     }
 }
 @media(max-width:360px){
@@ -65,7 +65,7 @@ img{
         }
         }
         .colordiv{
-            bottom: -19%;
+                    bottom: -30%;
             }
         }
 }
