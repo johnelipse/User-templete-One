@@ -438,6 +438,9 @@ header .login {
   padding-right: 5rem;
   text-align: center;
 }
+.powerfull-features .marq img {
+  width: 3rem;
+}
 .powerfull-features .features-card {
   display: flex;
   background-color: #63e7e3;
