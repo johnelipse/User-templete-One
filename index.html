@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
 <!-- header part -->
@@ -183,14 +186,85 @@ data-aos-offset="0">
 </div>    
 </section>
 <!-- financial navigator -->
-<section class="financial-navigator-section">
-<div class="financial-image"></div>
-<div class="financial-details"></div>
+<section class="financial-navigator-section"  data-aos="fade-up">
+<div class="financial-image">
+<img src="images/image.png" alt="loading">
+</div>
+<div class="financial-details">
+<h3>Your financial navigator</h3>
+<p>Your experienced advisors create personalized financial plans to guide you toward a secure and prosperous future.</p>
+<a href="#" class="majorbtn">see it in action</a>
+<div class="remarks">
+<div class="remark">
+<img src="images/client-01.svg" alt="loading">
+<img src="images/star-image.svg" alt="loading">
+<p>15 Reviews</p>
+</div>
+<div class="remark">
+<img class="google" src="images/client-02.svg" alt="loading">
+<img src="images/star-image.svg" alt="loading">
+<p>4.5 / 5.0 ratings</p>
+</div>
+</div>
+</div>
+<img class="obs-image" src="images/dashboard-06.svg" alt="loading">
+</section>
+<div class="section slider">
+<h2>Confidently secure from expert guidance</h2>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide  swiper-slide-1">
+        <!-- <img src="images/testimonial-image.jpg" alt="loading"> -->
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </div>
+<!-- financial solutions -->
+<section class="financial-solutions">
+<div class="left-hand">
+<h3>Your financial solutions await</h3>
+<p>Personalized financial plans crafted by experts.</p>
+<a href="#" class="majorbtn">Know more</a>
+</div>
+<div class="right-hand">
+    <div class="user-support">
+        <img src="/images/feature-01.svg" alt="">
+        <h4>Invoice and get paid easily!</h4>
+        <p>Invoice smarter simplify your process, get paid faster!.</p>
+        </div>
+        <div class="user-support">
+        <img src="/images/feature-02.svg" alt="">
+        <h4>Monitor your cash flow easily</h4>
+        <p>Effortlessly track your cash flow with our intuitive tools.</p>
+        </div>
+        <div class="user-support" data-aos="fade-up">
+            <img src="/images/feature-03.svg" alt="">
+            <h4>Pay all your bills with ease</h4>
+            <p>Farewell to late payments and stay financially organized.</p>
+            </div>
+            <div class="user-support" data-aos="fade-up">
+            <img src="/images/feature-04.svg" alt="">
+            <h4>Advanced analytics</h4>
+            <p>Say farewell to late payments and stay on top of your finances with ease.</p>
+            </div>
+</div>
 </section>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
