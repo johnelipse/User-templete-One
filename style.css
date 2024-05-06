@@ -8,6 +8,7 @@
 
 body {
   position: relative;
+  background-color: #fff8f0;
 }
 
 .majorbtn {
@@ -1123,5 +1124,174 @@ body {
   }
   .options .option-cards {
     margin-top: 1rem;
+  }
+}
+.pricing {
+  padding: 3rem;
+}
+.pricing .pricing-heading {
+  display: flex;
+  gap: 10rem;
+  color: #00323f;
+}
+.pricing .pricing-heading h3 {
+  font-size: 48px;
+}
+.pricing .pricing-button {
+  display: flex;
+  margin-top: 2.5rem;
+  gap: 2rem;
+}
+.pricing .pricing-button button {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #00323f;
+}
+.pricing .pricing-Cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.pricing .pricing-Cards .pricing-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  color: #00323f;
+}
+.pricing .pricing-Cards .pricing-card h4 {
+  font-size: 16px;
+}
+.pricing .pricing-Cards .pricing-card h3 {
+  font-size: 22px;
+}
+.pricing .pricing-Cards .pricing-card span {
+  font-size: 28px;
+}
+.pricing .pricing-Cards .pricing-card .pricing-card-details {
+  color: #00323f;
+  margin-bottom: 2rem;
+}
+.pricing .pricing-Cards .pricing-card .pricing-card-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.pricing .pricing-Cards .pricing-card button {
+  width: 100%;
+}
+.pricing .pricing-Cards .pricing-card button:hover {
+  background-color: rgba(0, 51, 64, 0.8823529412);
+  transition: 0.5s;
+}
+.pricing .pricing-Cards .pricing-card a {
+  color: white;
+}
+.pricing .pricing-Cards .pricing-card .pricing-footer {
+  width: 100%;
+}
+.pricing .pricing-Cards .pricing-card-1 {
+  background-color: white;
+  height: 29rem;
+}
+.pricing .pricing-Cards .pricing-card-2 {
+  background-color: #e3fbfa;
+  height: 34rem;
+}
+.pricing .pricing-Cards .pricing-card-3 {
+  background-color: #e7ff79;
+}
+
+@media (max-width: 360px) {
+  .pricing {
+    padding: 1rem;
+  }
+  .pricing .pricing-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: #00323f;
+  }
+  .pricing .pricing-heading h3 {
+    font-size: 26px;
+  }
+  .pricing .pricing-button {
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 2rem;
+  }
+  .pricing .pricing-button button {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #00323f;
+  }
+  .pricing .pricing-Cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  .pricing .pricing-Cards .pricing-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    color: #00323f;
+  }
+  .pricing .pricing-Cards .pricing-card h4 {
+    font-size: 16px;
+  }
+  .pricing .pricing-Cards .pricing-card h3 {
+    font-size: 22px;
+  }
+  .pricing .pricing-Cards .pricing-card span {
+    font-size: 28px;
+  }
+  .pricing .pricing-Cards .pricing-card .pricing-card-details {
+    color: #00323f;
+    margin-bottom: 2rem;
+  }
+  .pricing .pricing-Cards .pricing-card .pricing-card-details ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .pricing .pricing-Cards .pricing-card button {
+    width: 100%;
+  }
+  .pricing .pricing-Cards .pricing-card button:hover {
+    background-color: rgba(0, 51, 64, 0.8823529412);
+    transition: 0.5s;
+  }
+  .pricing .pricing-Cards .pricing-card a {
+    color: white;
+  }
+  .pricing .pricing-Cards .pricing-card .pricing-footer {
+    width: 100%;
+  }
+  .pricing .pricing-Cards .pricing-card-1 {
+    height: auto;
+  }
+  .pricing .pricing-Cards .pricing-card-2 {
+    background-color: #e3fbfa;
+    height: auto;
+  }
+  .pricing .pricing-Cards .pricing-card-3 {
+    background-color: #e7ff79;
   }
 }/*# sourceMappingURL=style.css.map */

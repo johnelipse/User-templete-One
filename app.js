@@ -37,7 +37,7 @@ menuBtn.addEventListener("click",function(){
     generalLinks.classList.toggle("general-linksActive")
 })
 
-
+//swiper...//
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -60,6 +60,33 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+//targeting and function for the pricing cards
+// const pricingCardsOne=document.querySelector(".pricing-Cards-1");
+// const pricingCardsTwo=document.querySelector(".pricing-Cards-2");
+const priceOne=document.querySelector(".priceOne")
+const priceTwo=document.querySelector(".priceTwo")
+const priceThree=document.querySelector(".priceThree")
+const monthBtn=document.querySelector(".monthBtn")
+const anualBtn=document.querySelector(".anualBtn")
+// console.log(priceOne,priceTwo,priceThree,monthBtn,anualBtn);
+monthBtn.style.borderBottom='1px solid black';
+anualBtn.addEventListener("click",function(){
+  anualBtn.style.borderBottom='1px solid black';
+  monthBtn.style.borderBottom='none';
+  priceOne.innerText="$19/";
+  priceTwo.innerText="$49/";
+  priceThree.innerText="$89/";
+})
+monthBtn.addEventListener("click",function(){
+  console.log("clicked");
+  monthBtn.style.borderBottom='1px solid black';
+  anualBtn.style.borderBottom='none';
+  priceOne.innerText="$22/";
+  priceTwo.innerText="$50/";
+  priceThree.innerText="$99/";
+})
+
 
 
 

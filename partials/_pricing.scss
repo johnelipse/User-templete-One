@@ -1,0 +1,170 @@
+.pricing{
+padding: 3rem;
+.pricing-heading{
+display: flex;
+gap: 10rem;
+color: $primary-color;
+h3{
+  font-size: 48px;
+}
+}
+.pricing-button{
+display: flex;
+margin-top: 2.5rem;
+gap: 2rem;
+button{
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color: $primary-color;
+}
+}
+.pricing-Cards{
+margin-top: 2rem;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+gap: 2rem;
+.pricing-card{
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: flex-start;
+padding: 2rem;
+gap: 2rem;
+border-radius: 1rem;
+width: 100%;
+color: $primary-color;
+h4{
+  font-size: 16px;
+}
+h3{
+  font-size: 22px;
+}
+span{
+  font-size: 28px;
+  }
+.pricing-card-details{
+  color: $primary-color;
+  margin-bottom: 2rem;
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+}
+button{
+  width: 100%;
+
+&:hover{
+  background-color: #003340e1;
+  transition: 0.5s;
+}
+}
+a{
+  color: white;
+}
+.pricing-footer{
+ width: 100%;
+ }
+}  
+.pricing-card-1{
+  background-color: white;
+  height: 29rem;
+}
+.pricing-card-2{
+  background-color: #e3fbfa;
+  height: 34rem;
+}
+.pricing-card-3{
+background-color: $secondary-color;
+}
+}
+}
+@media(max-width:360px){
+  .pricing{
+    padding: 1rem;
+    .pricing-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: $primary-color;
+    h3{
+      font-size: 26px;
+    }
+    }
+    .pricing-button{
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 2rem;
+    button{
+      border: none;
+      background-color: transparent;
+      font-size: 1rem;
+      cursor: pointer;
+      color: $primary-color;
+    }
+    }
+    .pricing-Cards{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2rem;
+    .pricing-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    color: $primary-color;
+    h4{
+      font-size: 16px;
+    }
+    h3{
+      font-size: 22px;
+    }
+    span{
+      font-size: 28px;
+      }
+    .pricing-card-details{
+      color: $primary-color;
+      margin-bottom: 2rem;
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    }
+    button{
+      width: 100%;
+    
+    &:hover{
+      background-color: #003340e1;
+      transition: 0.5s;
+    }
+    }
+    a{
+      color: white;
+    }
+    .pricing-footer{
+     width: 100%;
+     }
+    }  
+    .pricing-card-1{
+        height: auto;
+    }
+    .pricing-card-2{
+      background-color: #e3fbfa;
+      height: auto;
+    }
+    .pricing-card-3{
+    background-color: $secondary-color;
+    }
+    }
+    }
+}
